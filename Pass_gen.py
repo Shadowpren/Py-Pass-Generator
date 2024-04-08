@@ -3,7 +3,7 @@ import os
 import msvcrt
 
 
-ABSOLUTE_PATH = 'D:/pass.txt'
+ABSOLUTE_PATH = 'YOUR PATH TO TXT FILE'
 
 
 def Create_Password(number_quantity):
@@ -22,7 +22,7 @@ def main():
   numbers = int(input("Введите число символов для пароля: "))
   reason = str(input("Для чего вам необходим пароль: "))
   pw: str = str(Create_Password(numbers))
-  print(f'СГЕНЕРИРОВАННЫЙ ПАРОЛЬ: {pw}')
+  print(f'PASSWD: {pw}')
   Text_File(pw=pw,reason=reason)
   
 while True:
